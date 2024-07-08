@@ -1,6 +1,6 @@
 main.py - file that we're going to run when we want to start our web server
-__init__.py - this file is going to make website folder a python package (we can import that folder, and whatever is insede of __init__.py file will run automatically. Here we are going to setup flask application). In this file we need to registre our blueprints.
-models.py - we use to store database models
+__init__.py - this file is going to make website folder a python package (we can import that folder, and whatever is inside of __init__.py file will run automatically. Here we are going to setup flask application ==> from website import bla bla (if we are not in the same difectory) or from . import bla bla (if we are in the same directory)). In this file we need to registre our blueprints. 
+models.py - we use to store database models. Database model for users and for notes.
 views.py - stores all the routes for our website or the URL endpoints for the functioning/frontend aspect of our website
 auth.py - we define: login, logout, signup
 flask modules: flask-login (is for login users in), flask-sqlalchemy (wrapper for SQL, to create database models, delate models, add models)
